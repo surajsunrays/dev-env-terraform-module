@@ -8,5 +8,7 @@ provider "aws" {
 
 module "sunrays" {
   source = "./modules/child"
-  version = "1.0.0"
+  tags {
+    version = "1.0.0"
+  }
 }
