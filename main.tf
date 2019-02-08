@@ -6,7 +6,7 @@ provider "aws" {
   profile = "devops"
 }
 
-module "child" {
-  source = "./child"
+module "sunrays" {
+  source = "./modules/child"
   version = "1.0.0"
 }
