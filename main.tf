@@ -38,4 +38,5 @@ resource "aws_sns_topic" "development" {
 
 module "child" {
   source = "./child"
+  version = "1.0.0"
 }
