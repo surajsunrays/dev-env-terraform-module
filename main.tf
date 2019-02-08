@@ -6,9 +6,11 @@ provider "aws" {
   profile = "devops"
 }
 
-module "sunrays" {
+module "simple-s3-bucket" {
   source = "./modules/child"
   tags {
     version = "1.0.0"
+    owner = "sunrays"
+    environment = "dev"
   }
 }
