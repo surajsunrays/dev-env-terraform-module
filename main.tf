@@ -8,9 +8,11 @@ provider "aws" {
 
 module "simple-s3-bucket" {
   source = "./modules/child"
+  tags = "1.0.0"
   tags {
     version = "1.0.0"
     owner = "sunrays"
     environment = "dev"
+    name = "development-env-modules"
   }
 }
